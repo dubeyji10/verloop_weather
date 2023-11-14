@@ -1,13 +1,38 @@
 # verloop_weather
-a copy of assignment solution
+A copy of assignment solution
 
 ## Created a wrapper API
 
 ## The REST service is implemented using FastAPI
 ##### Official Docs : https://fastapi.tiangolo.com/
-### also need to install uvicorn - which runs a local server to serve api at route localhost:8000
+### Also need to install uvicorn - which runs a local server to serve api at route localhost:8000
 
 ##### Alternate options could use other webservice options also such as django or a light-weight one like flask to implement these routes
+
+### Installation
+
+### Assuming a stable python3 version is installed.
+
+### Install fastapi and uvicorn
+
+``` bash
+$ pip install fastapi
+```
+
+
+``` bash
+$ pip install uvicorn
+```
+
+### To Run : 
+
+``` bash
+$ cd to_required_directory_where_the_main_py_file_is
+
+$ uvicorn main:app --reload
+
+```
+
 
 ### Routes
 
@@ -20,7 +45,7 @@ a copy of assignment solution
 ```
 
 
-### '/getCurrentWeather' - to get current weather through weatherapi(rapidapi) -> METHOD : POST ( with payload/request body)
+### '/getCurrentWeather' - to get current weather through weatherapi(rapidapi) <br> -> METHOD : POST ( with payload/request body)
 #### http://localhost:8000/getCurrentWeather
 <p>
   request body : <br>
